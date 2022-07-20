@@ -1,0 +1,35 @@
+@charset "EUC-KR";
+*{
+ margin:0px;
+ padding:0px
+}
+#con{
+	width:1024px;
+	margin:0px auto;
+	background-color:red;
+	padding:10px
+}
+#header {
+	border:solid 5px black;
+	margin:10px;
+	padding:5px
+}
+#main {
+	background-color:orange
+}
+#main_left {
+	background-color:blue;
+	width:450px;
+	passing:30px;
+	float:left;
+}
+#main_right {
+	background-color:green;
+	width:500px;
+	padding:30px;
+	float:right;
+}
+#footer {
+	background-color:grey;
+	clear:both;
+}

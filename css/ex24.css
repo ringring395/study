@@ -1,0 +1,51 @@
+@charset "EUC-KR";
+*{
+ margin:0px;
+ padding:0px
+}
+#con{
+	width:1024px;
+	margin:0px auto;
+	padding:10px; }
+#header {background: linear-gradient(#8C8C8C,#EAEAEA);
+	height:120px; width:auto;
+	position:relative; }
+#he1 {position:absolute; top:30px }
+#he2 {position:absolute; top:90px  }	
+#he3 {position:absolute; top:90px; left:570px; }
+#h1 {color:red; }
+#ta1{border-collapse:collapse; 
+	background:white; padding:20px	}
+	
+#main {background:green;
+		margin-top:10px;
+		margin-bottom:10px;
+		padding:5px;
+		display:flex;
+		flex-direction: row;
+		justify-content: space-between;}
+#main_left {background:lightblue; 
+	border:solid gray; 
+width:160px;
+	height:130px	}
+#ta2{border:none;
+	 }
+#main_right {width:180px;	}	
+#main_center {width:710px;
+	margin-left:10px}
+.d_3 {background:beige; 
+	border:solid 2px red;
+	width:160px; 
+	border-radius:5px;  
+	}
+.d_2 {background:#EAEAEA; 
+	border:solid 2px blue;
+	width:650px; 
+	border-radius:5px; }
+#d_3_2 {margin-top:5px}
+#d_2_2 {margin-top:5px; 
+		margin-bottom:5px}
+#footer {background:blue; 
+		clear:both;}
+ul {list-style:none;}
+ul li{display:inline-block; padding:5px}
