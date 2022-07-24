@@ -32,9 +32,7 @@ window.onload=function(){
 	var ppw=document.querySelector("#ppw");
 	var pw=document.querySelector("#inpw");
 	pw.onkeyup= function(){
-//		var pattern2=/^[A-Z]+[a-zA-Z0-9-_]{7,15}$/g;
-		//?는 필수라는 뜻. 대문자필수		소문자필수		숫자필수		특수문자필수		모든문자+특수문자	8~16자사이
-		var pattern2=/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])[\w#?!@$%^&*-]{8,16}$/g;
+		var pattern2=/^[A-Z]+[a-zA-Z0-9-_]{7,15}$/g;
 		if(pattern2.test(pw.value)){
 			ppw.innerHTML="올바른 비밀번호 형식입니다.";
 			ppw.style.color="green";
@@ -43,12 +41,11 @@ window.onload=function(){
 			ppw.style.color="red";
 		}
 	}
-//이메일주소 : 이메일주소를 다시 확인해주세요.(@ 필수)
+//이메일주소 : 이메일주소를 다시 확인해주세요.
 	var pe=document.querySelector("#pe");
 	var email=document.querySelector("#ine");
 	email.onkeyup=function(){
-//		var pattern3=/^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/g;
-		var pattern3=new RegExp(/[\w]+\@[\w]+[\.]/g);
+		var pattern3=new RegExp(/[\w-.]+\@[\w-.]+[\.]/g);
 		if(pattern3.test(email.value)){
 			pe.innerHTML="올바른 이메일 형식입니다.";
 			pe.style.color="green";
@@ -62,3 +59,4 @@ window.onload=function(){
 //var regexp = /^[a-z]+[a-z0-9-_]{5,20}$/g; 플래그 문자
 //if(regexp.test(id.value)){
 //			정규식 메서드
+}
