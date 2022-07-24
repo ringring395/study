@@ -1,13 +1,20 @@
 package study;
 import java.util.Scanner;
-//ë±…í¬ ê°ì²´
+//¹ğÅ© °´Ã¼
 public class Bank {
 	Scanner s = new Scanner(System.in);
-	String number;	//ê³„ì¢Œë²ˆí˜¸
-	String name;	//ê³„ì¢Œì£¼
-	int count;		//ì´ˆê¸°ì…ê¸ˆì•¡
-
+	private String number;	//°èÁÂ¹øÈ£
+	private String name;	//°èÁÂÁÖ
+	private int count;		//ÃÊ±âÀÔ±İ¾×
 	
+	Bank(String num, String na, int c){
+		this.number = num;
+		this.name = na;
+		this.count = c;
+	}
+
+	//getter¿Í setter ¸Ş¼Òµå ¼±¾ğ
+	//static¾øÀ¸´Ï, ÀÎ½ºÅÏ½º ¸Ş¼Òµå
 	public String getNumber() {return number;}
 	public void setNumber(String number) {
 		this.number = number;
@@ -21,25 +28,6 @@ public class Bank {
 		this.count = count;
 	}
 
-	void create() {		//ê³„ì¢Œìƒì„±
-
-	}
-	
-	void numlist() {		//ê³„ì¢Œëª©ë¡ ì¶œë ¥
-		
-	}
-	
-	void numcheck() {		//ê³„ì¢Œë²ˆí˜¸ í™•ì¸
-
-	}
-	
-	void deposit() {	//ì…ê¸ˆ
-		
-	}
-	
-	void withdraw() {	//ì¶œê¸ˆ
-		
-	}
 	
 
 }
