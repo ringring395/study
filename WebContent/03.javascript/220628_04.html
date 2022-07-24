@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>28일 연습문제</title>
+<style type="text/css"></style>
+<script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+<script type="text/javascript" src="../../js/220628_04.js"></script>
+</head>
+<body>
+<!-- 1번 -->
+<h3>갯수<input type="text" id="co1" value="1">
+<input type="button" id="p" value="+">
+<input type="button" id="m" value="-"></h3>
+<!-- 2번 -->
+
+<p>취미</p>
+<ul>
+	<li>야구<input id="ch1" name="ch" type="checkbox" value="야구"></li>
+	<li>농구<input id="ch2" name="ch" type="checkbox" value="농구"></li>
+	<li>게임<input id="ch3" name="ch" type="checkbox" value="게임"></li>
+</ul>
+<button id="su">결과보기</button>
+<p>결과값: </p>
+<h3 id="su_result"></h3>
+<!-- 3번 -->
+<h3>글자수 세기</h3>
+<textarea id="3input" placeholder="글자를 입력하세요." cols="50" rows="10"></textarea>
+<h3>입력문자수: <span id="3count"></span></h3>
+<!-- 4번 -->
+<h3>1.+연산</h3>
+	<input type="text" id="4_1left">+
+	<input type="text" id="4_1right">=
+	<input type="text" id="4_1result">
+	<button id="4_1sum">연산</button>
+<h3>2. 총합 구하기</h3>
+가격<input type="text" id="4_2left">X 수량
+<select name="4count" id="4_2count">
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+</select>총합:<span id="4_2result"></span>
+
+<h3>3. 총합 구하기2(선택된 값만)</h3>
+	바나나(1000원)<input id="4_3_1" class="4_3" type="checkbox" value="1000"><br>
+	사과(500원)<input id="4_3_2" class="4_3" type="checkbox" value="500"><br>
+	배(1500원)<input id="4_3_3" class="4_3" type="checkbox" value="1500"><br>
+	<input type="button" id="4_3sum" value="총합구하기"><br>
+선택한 총가격:<span id="4_3result"></span>
+<!-- 5번 -->
+<form>
+<p>아이디<input type="text" id="5id"><span id="5idd"></span></p>
+<p>비밀번호<input type="text" id="5pw"><span id="5pww"></span></p>
+<input type="submit" id="5login" value="로그인">
+</form>
+</body>
+</html>

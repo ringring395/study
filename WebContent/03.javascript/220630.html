@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>30일 학습</title>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+ 
+<p>Type 'correct' to validate.</p>
+<form action="javascript:alert( 'success!' );">
+  <div>
+    <input type="text">
+    <input type="submit">
+  </div>
+</form>
+<span></span>
+ 
+<script>
+//submit이벤트 실행
+$( "form" ).submit(function( event ) {
+	//	input 태그 중 첫번째태그
+  if ( $( "input" ).first().val() === "correct" ) {
+    $( "span" ).text( "Validated..." ).show(); //text()내용을 보여주기.
+    return;
+  }
+ //										선택한 요소를 서서히 사라지게함.
+  $( "span" ).text( "Not valid!" ).show().fadeOut( 1000 );
+  event.preventDefault();
+});
+</script>
+ 
+</body>
+</html>
