@@ -32,7 +32,9 @@ public class accTest {
 		}
 			
 		}//while닫음
-
+		
+		
+		
 		
 	}//메인메소드 닫음
 }//accTest닫음

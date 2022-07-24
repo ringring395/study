@@ -3,9 +3,9 @@ import java.util.Scanner;
 //뱅크 객체
 public class Bank {
 	Scanner s = new Scanner(System.in);
-	private String number;	//계좌번호
-	private String name;	//계좌주
-	private int count;		//초기입금액
+	String number;	//계좌번호
+	String name;	//계좌주
+	int count;		//초기입금액
 
 	
 	public String getNumber() {return number;}

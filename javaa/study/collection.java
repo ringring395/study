@@ -1,6 +1,7 @@
 package study;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class collection {
@@ -48,12 +49,52 @@ public class collection {
 		st.sum = 85;
 		al2.add(st);
 		//System.out.println(al2.size());
-		for(int i=0; i<al2.size(); i++) {
-			System.out.println(al2.get(i).name+"학생의 총점은 "+al2.get(i).sum);
-
-		}
+//		for(int i=0; i<al2.size(); i++) {
+//			System.out.println(al2.get(i).name+"학생의 총점은 "+al2.get(i).sum);
+//
+//		}
 		
-
+		//HashMap map = new HashMap();
+		//HashMap<key,value> 변수명 = new HashMap();
+		HashMap<Integer,String> map = new HashMap<>();
+		//hashmap 값 추가
+		map.put(1, "강호동");
+		map.put(2, "이수근");
+		map.put(3, "서장훈");
+//		System.out.println(map);
+//		System.out.println(map.get(1));
+//		System.out.println(map.get(2));
+//		System.out.println(map.get(3));
+			//int타입, student 객체
+		HashMap<Integer,student> map2 = new HashMap<>();
+		student stu2 = new student();
+		//hashmap 값 추가
+		stu2.name = "강호동";
+		stu2.sum = 100;
+		map2.put(1, stu2);
+		stu2 = new student();
+		stu2.name = "이수근";
+		stu2.sum = 85;
+		map2.put(2, stu2);
+		stu2 = new student();
+		stu2.name = "서장훈";
+		stu2.sum = 95;
+		map2.put(3, stu2);
+		System.out.println(map2);
+		System.out.println(map2.get(1).name);
+		System.out.println(map2.get(1).sum);
+		System.out.println(map2.get(2).name);
+		System.out.println(map2.get(2).sum);
+		System.out.println(map2.get(3).name);
+		System.out.println(map2.get(3).sum);		
+		
+		//for문으로 출력문 반복하기
+		for(int i=1; i<=map2.size(); i++) {
+			System.out.println(map2.get(i).name+"학생의 총점은 "+map2.get(i).sum+"점 입니다.");
+		}		
+		
+		
+		
 		
 		
 	}

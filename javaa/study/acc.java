@@ -22,6 +22,7 @@ public class acc {
 
 	void create() {		//계좌생성
 		System.out.println("=계좌생성=");
+		
 	}
 	
 	void numlist() {		//계좌목록 출력
