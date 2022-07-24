@@ -1,0 +1,20 @@
+@charset "UTF-8";
+h1 {text-align:center}
+p {text-align:center}
+h5{vertical-align:bottom;}
+hr {text-align:center; width:800px; height:4px; color:black;
+	background-color:black}
+.red {color:red; font-weight:bolder;
+vertical-align: top;}
+table { border-collapse: collapse; }
+.gray {background-color:lightgray; border:none;
+		text-align:right;}
+.num{width:70px}
+.birth{width:35px}
+#email{width:200px}
+.zip{width:45px}
+#add{width:200px}
+.phone{width: 50px}
+#foot{display: table;
+    margin-left: auto;
+    margin-right: auto;}
