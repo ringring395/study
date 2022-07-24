@@ -1,0 +1,19 @@
+@charset "EUC-KR";
+ /* 태그선택자 : p태그에 글자색 빨갛게
+  선택자 {
+  	속성:값;
+ }
+ */
+  p {
+   color:red;
+  }
+  
+ /* 클래스 선택자: 클래스 ai에 배경색 green으로 */ 
+  .ai {
+   background-color:green;
+  }
+  
+ /* ID선택자 : ci에 글자색 gray으로.*/
+ #ci{
+  color:gray
+ }
