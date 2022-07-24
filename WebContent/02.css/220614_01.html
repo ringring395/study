@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+#header{background:beige; height:100px; display:flex; 
+flex-direction: row; 
+justify-content: space-between;}
+#menu{}
+ul{dispaly:inline; }
+ul li{display:inline-block;}
+ul li:hover{background:orange;}
+ul li:hover ul{display:block;}
+ul li ul{position:absolute; display:none; }
+ul li ul li{background:white; display:block; list-style:none; }
+#main2{background:gray; display:flex;
+		}
+.main2{flex:auto; height:300px}
+/* https://rgy0409.tistory.com/3069 flex 적용할때 참고  */
+#main_i{width:500px; height:100px}
+</style>
+</head>
+<body>
+<div id="cont">
+<div id="header">
+<h1>JUST 쇼핑몰</h1>
+<div id="menu">
+	<ul>
+		<li>팬츠
+			<ul>
+				<li>청바지</li>
+				<li>짧은바지</li>
+				<li>긴바지</li>
+			</ul></li>
+		<li>악세사리
+			<ul>
+				<li>귀고리</li>
+				<li>목걸이</li>
+				<li>반지</li>
+				<li>팔찌</li>
+			</ul></li>
+	</ul>
+</div></div>
+<div id="main">
+	<div id="main1">
+		<img id="main_i" src="D:\01-STUDY\image/hodori.jpg"></div>
+	<div id="main2">
+		<div id="main_2_1" class="main2">
+			<img id="main_2_1_i" src="D:\01-STUDY\image/hodori.jpg"></div>
+		<div id="main_2_2" class="main2">
+			<img id="main_2_1_i" src="D:\01-STUDY\image/cosmos.jpg"></div>
+		<div id="main_2_3" class="main2">
+			<img id="main_2_1_i" src="D:\01-STUDY\image/mugunghwa.png"></div>
+	</div>
+	</div>
+<footer>
+	<p>
+</footer>
+</div>
+
+</body>
+</html>

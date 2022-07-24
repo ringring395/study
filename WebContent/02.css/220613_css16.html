@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>css 연습 16</title>
+<style type="text/css">
+/* 참고: https://firerope.tistory.com/4*/
+#k{
+	 background:blue;
+	 width:150px;
+	 height:150px;
+ }
+#i {
+	 position:relative;
+	 top:50%;
+	 left:50%;
+	 transform:translate(-50%,-50%)
+}
+#m1{
+	width:100px;
+    height:100px;
+    position:absolute;
+    left:20%;
+    top:20%
+
+}
+#new{
+	 width:200px;
+	 height:200px;
+	 background-color:skyblue;
+	 position:relative
+}
+</style>
+</head>
+<body>
+	<p>absolute는 static이 아닌 첫 부모를 기준으로 한다.</p>
+	<div id="k">
+	  <img id="i" src="D:\01-STUDY\image/cosmos.jpg">
+	 </div>
+	 <div id="new">
+		<img id="m1" src="D:\01-STUDY\image/mugunghwa.png">
+	</div>
+</body>
+</html>

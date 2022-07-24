@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>레이아웃 연습</title>
+<style type="text/css">
+#container{width:1024px; background:skyblue;
+			padding:10px; }
+#header{background:orange; padding:10px;
+		text-align:center;
+}
+#main{background:violet; padding:5px;
+		margin-top:10px; margin-bottom:10px;
+		
+		display:flex; flex-direction: row;
+		justify-content:space-between;
+}
+#m_left{background:gray; padding:5px;
+		width:600px; 
+		margin:3px;}
+#m_right{background:yellow; padding:5px;
+		margin:3px;  width:300px; 
+}
+#footer{background:green; padding:5px;
+		clear:both;}
+
+</style>
+</head>
+<body>
+<div id="container">
+	<div id="header">
+		<h3>Naver~제목.</h3>
+	</div>
+	<div id="main">
+		<div id="m_left">
+		기사내용 입력
+		</div>
+		<div id="m_right">
+		 <ul>
+		 	<li>다른기사1</li>
+		 	<li>다른기사2</li>
+		 	<li>다른기사3</li>
+		 </ul>
+		</div>
+	</div>
+	<div id="footer">
+		마지막 copyright
+	</div>
+</div>
+</body>
+</html>
