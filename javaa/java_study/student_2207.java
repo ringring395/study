@@ -44,7 +44,7 @@ public class student_2207 {
 	for(String i : major) {
 		map.put(i,  map.getOrDefault(i, 0)+1);
 	}
-	System.out.println("hash확인용"+map); //hash map 배열 출력 
+	//System.out.println("hash확인용"+map); //hash map 배열 출력 
 	
 	//value로 key값 찾기
 	//찾고 싶은 학과 입력
@@ -72,7 +72,7 @@ public class student_2207 {
 	for(int i : grade) {
 		grademap.put(i, grademap.getOrDefault(i, 0)+1);
 	}
-	System.out.println("hash확인용2"+grademap);
+	//System.out.println("hash확인용2"+grademap);
 	//가장 많은 학년 수 출력(hashmap 이용)
 	int modegrade = 0;
 	for(int i : grademap.keySet()) {
