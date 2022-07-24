@@ -60,12 +60,25 @@ public class CaculatorTest {
 	//3번
 	Calculator solution = new Calculator();
 	System.out.print("3_첫번째 정수를 입력하시오");
-	solution.a = s.nextInt();
+	int a = s.nextInt();
 	System.out.print("3_두번째 정수를 입력하시오");
-	solution.b = s.nextInt();
-	solution.sol(solution.a, solution.b);
-		
-		
+	int b = s.nextInt();
+	solution.sol(a, b);
+	//4,5번
+	Calculator stu = new Calculator();
+	System.out.println("5_국어,영어,수학점수 입력하시오.");
+	stu.kor = s.nextInt();
+	stu.eng = s.nextInt();
+	stu.math = s.nextInt();	
+	System.out.println(stu.getTotal());
+	System.out.println(stu.getAverage());	//그냥 결과값
+	//Math.round써서 반올림
+	// 평균 *10 => (반올림) => 다시 10나눔.
+	//예)24.333334 *10 =>243.33334 => 243 => 24.3
+	System.out.println(Math.round(stu.getAverage()*10)/10.0);
+	// %f 활용
+	System.out.printf("%.1f",stu.getAverage());
+	
 
 	}//메인메소드 닫음
 }//클래스닫음

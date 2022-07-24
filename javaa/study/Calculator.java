@@ -86,8 +86,7 @@ public class Calculator {
 	
 	
 	//3번
-	int a;
-	int b;
+	//인스턴스 메소드
 	void sol(int a, int b) {
 		int sum = 0;
 		if(a < b) {
@@ -95,17 +94,23 @@ public class Calculator {
 				sum +=i;
 			}//for 닫음
 		System.out.println(sum);	
-		}else if(a>b) {
+		}else if(a > b) {		//임시변수 활용해서 ab바꾸면됨
 			for(int i =b; i<=a; i++) {
 				sum +=i;
 			}//for 닫음	
 		System.out.println(sum);
-		}else if(a==b) {
+		}else if(a == b) {
 		System.out.println(a);
 		}
 	}
+//	if(a > b) {		//a>b이면,
+//		tmp = a;//a값을 tmp에 저장,
+//		a = b;		//b값을 a에 저장,
+//		b = tmp;	//tmp값을 b에 저장.
+//	}
+	
 	//4번 
-
+	//인스턴스 변수(static X)
 	String name;	//학생이름
 	int ban; 		//반
 	int no;			//번호
@@ -113,12 +118,13 @@ public class Calculator {
 	int eng;		//영어점수
 	int math;		//수학점수
 	
-	int getTotal() {
+							//return 타입 없으면 void
+	int getTotal() {		//return 타입오면 빨간줄 사라짐.
 		return kor+eng+math;
 	}
 	float getAverage() {
-		float avg = getTotal()/3f;
-		return Math.round((avg*100)/100.0);
+		return (kor+eng+math)/(float)3;
+		
 	}
 	
 	
