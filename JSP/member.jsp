@@ -7,23 +7,26 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>login jsp 학습</h1>
-<form action="loginserver.jsp">
+<h3>회원가입 어서오세요 'ㅅ'</h3>
+<form action="memberserver.jsp">
 <table>
 	<tr>
-		<td>아이디</td>
+		<td>ID : </td>
 		<td><input type="text" name="id"></td>
 	</tr>
 	<tr>
-		<td>비밀번호</td>
+		<td>PW : </td>
 		<td><input type="password" name="pw"></td>
 	</tr>
 	<tr>
-		<td colspan="2">
-		<input type="submit" value="로그인">
-		<a href="member.jsp">회원가입</a>
-		</td>
+		<td>ADDR : </td>
+		<td><input type="text" name="addr"></td>
 	</tr>
+	<tr>
+		<td colspan="2">
+		<input type="submit" value="회원가입">
+		</td>
+	</tr>		
 </table>
 </form>
 </body>
