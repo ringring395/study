@@ -7,16 +7,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>게시판_리스트</title>
 </head>
 <body>
 <h3> 게시판 목록 리스트 'ㅅ' </h3>
 <table border="1">
-	<tr>
-		<td>번호</td><td>제목</td><td>내용</td><td>작성일자</td><td>조회수</td><td>작성자id</td>
+	<tr >
+		<td>No.</td><td>제목</td><td>작성일자</td><td>조회수</td><td>글쓴이id</td>
 	</tr>
 <%
-
+	//login 데이터 수집(형변환)
+	String id = (String)session.getAttribute("id");
 
 	// DB연결
 	Connection conn = null;
@@ -29,25 +30,30 @@
 		conn = ds.getConnection();
 		
 		//게시판 목록을 출력 하기 위한 sql문장
-		//preparedstatement : java -> DB에 쿼리를 보내기 위해 사용하는 객체
 		pstmt = conn.prepareStatement("select * from board");
-		
+		//select문에 진행
 		rs = pstmt.executeQuery();	//ResultSet에 결과 들어가있음
-		
-		while(rs.next()){ 
+				
+		if(	id != null ){//id가 null값이 아니라면
 
+			while(rs.next()){ 
 %>
-
-	<tr>
-		<td><%=rs.getInt("bno") %></td>
-		<td><a href="b_content.jsp"><%=rs.getString("title") %></a></td>
-		<td><%=rs.getString("content") %></td>
-		<td><%=rs.getDate("regdate") %></td>
-		<td><%=rs.getInt("count") %></td>
-		<td><%=rs.getString("id") %></td>
-	</tr>
+			<tr>
+				<td><%=rs.getInt("bno") %></td>
+				<td><a href="b_content.jsp?bno=<%=rs.getInt("bno")%>"><%=rs.getString("title") %></a></td>
+				<td><%=rs.getString("regdate") %></td>
+				<td><%=rs.getInt("count") %></td>
+				<td><%=rs.getString("id") %></td>
+			</tr>
 <%
-		}//while닫음
+			}//while닫음
+			
+		}else{//id가 null이면
+			//login.jsp로 이동
+			out.println("<script>");
+			out.println("location.href='login.jsp'");
+			out.println("</script>");
+		}
 	}catch(Exception e){
 		e.printStackTrace();
 	}finally{
@@ -56,7 +62,7 @@
 		pstmt.close();
 	}	
 %>	
-	
 </table>
+<a href="b_create.jsp"><input type="button" value="글쓰기"></a>
 </body>
 </html>

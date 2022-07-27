@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>메인 페이지</title>
 </head>
 <body>
 메인입니다.
+<a href="b_create.jsp">글쓰기 바로가기</a>
+
 </body>
 </html>

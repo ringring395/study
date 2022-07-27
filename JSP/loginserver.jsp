@@ -46,7 +46,7 @@
 			session.setAttribute("id", id);	//로그인된 채로
 			//메인페이지로 이동 main.jsp
 			out.println("<script>");
-			out.println("location.href='b_create.jsp'");
+			out.println("location.href='main.jsp'");
 			out.println("</script>");
 		}else {	//그렇지 않으면
 			//login.jsp를 실행.
