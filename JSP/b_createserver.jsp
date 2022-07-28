@@ -9,13 +9,15 @@
 <meta charset="UTF-8">
 <title>b_createserver</title>
 <%
+	//한글 깨짐 방지 설정(form 태그의 method가 post일때)
+	request.setCharacterEncoding("UTF-8");
 	//데이터 수집
 	//사용자가 입력한 제목을 title변수에 저장
 	String title = request.getParameter("title");
 	//사용자가 입력한 내용을 content변수에 저장
 	String content = request.getParameter("content");
 	//login 데이터 수집(형변환)
-	String id =	(String)session.getAttribute("id");
+	String id =	(String)session.getAttribute("id");	//로그인할때 사용자가 입력한 id를 가져옴.
 %>
 </head>
 <body>

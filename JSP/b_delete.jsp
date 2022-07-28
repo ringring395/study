@@ -9,6 +9,9 @@
 <meta charset="UTF-8">
 <title>게시물 삭제</title>
 <%
+	//bno수집
+	int bno = Integer.parseInt(request.getParameter("bno"));
+	
 	//id 값 수집
 	String id = (String)session.getAttribute("id");
 
@@ -31,7 +34,7 @@
 		//preparedstatement : java -> DB에 쿼리를 보내기 위해 사용하는 객체
 		pstmt = conn.prepareStatement("delete from board where bno=?");
 		//첫번째 물음표에는 bno값 
-		pstmt.setInt(1,((int)session.getAttribute("bno")));
+		pstmt.setInt(1,bno);
 
 		//위 sql문장을 실행(workbench : ctrl+enter)
 		int result = pstmt.executeUpdate();	//delete되면 1, 안되면 0

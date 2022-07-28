@@ -7,8 +7,8 @@
 <title>메인 페이지</title>
 </head>
 <body>
-메인입니다.
-<a href="b_create.jsp">글쓰기 바로가기</a>
-
+메인입니다.</br>
+<a href="b_create.jsp"><button>글쓰기 바로가기</button></a>
+<a href="logoutserver.jsp"><button>로그아웃</button></a>
 </body>
 </html>

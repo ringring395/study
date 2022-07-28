@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page import="java.sql.*" %>    
 <%@ page import="javax.sql.*" %> 
 <%@ page import="javax.naming.*" %>   
@@ -11,6 +12,7 @@
 </head>
 <body>
 <h3> 게시판 목록 리스트 'ㅅ' </h3>
+<a href="logoutserver.jsp"><button>로그아웃</button></a>
 <table border="1">
 	<tr >
 		<td>No.</td><td>제목</td><td>작성일자</td><td>조회수</td><td>글쓴이id</td>
@@ -38,6 +40,7 @@
 
 			while(rs.next()){ 
 %>
+
 			<tr>
 				<td><%=rs.getInt("bno") %></td>
 				<td><a href="b_content.jsp?bno=<%=rs.getInt("bno")%>"><%=rs.getString("title") %></a></td>
@@ -45,6 +48,7 @@
 				<td><%=rs.getInt("count") %></td>
 				<td><%=rs.getString("id") %></td>
 			</tr>
+	
 <%
 			}//while닫음
 			
@@ -63,6 +67,6 @@
 	}	
 %>	
 </table>
-<a href="b_create.jsp"><input type="button" value="글쓰기"></a>
+	<a href="b_create.jsp"><input type="button" value="글쓰기"></a>
 </body>
 </html>

@@ -15,8 +15,8 @@
 	String content = request.getParameter("content");
 	//로그인 된 아이디를 가져옴
 	String id = (String)session.getAttribute("id");
-	//글번호를 가져옴
-	int bno = (int)session.getAttribute("bno");
+	//bno 수집
+	int bno = Integer.parseInt(request.getParameter("bno"));
 	
 %>
 </head>
@@ -43,13 +43,13 @@
 
 		//위 sql문장을 실행
 		//executeUpdate() : insert, update, delete
-		int result = pstmt.executeUpdate();	//insert되면 1, 안되면 0
+		int result = pstmt.executeUpdate();	//update되면 1, 안되면 0
 		//session id가 글의 id랑 같아야됨
 		if(id != null ){ //id가 null이 아니면
 			if(result == 1){	//update되었으면(=게시물 수정 되었으면)
-				//바로 게시판 전체 리스트로 이동
+				//바로 게시물 상세 페이지로 이동
 				out.println("<script>");
-				out.println("location.href='b_list.jsp'");
+				out.println("location.href='b_content.jsp?bno="+bno+"'");
 				out.println("</script>");			
 			}else {			//그렇지 않으면
 				//게시물 글수정에 다시 이동

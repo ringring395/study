@@ -16,7 +16,6 @@
 	int bno = Integer.parseInt(request.getParameter("bno"));
 	//id수집
 	String id =	(String)session.getAttribute("id");
-
 	
 	// DB연결
 	Connection conn = null;
@@ -42,12 +41,16 @@
 		<form action="b_updateserver.jsp">
 		<table border="1">
 			<tr>
+				<td>글번호</td>
+				<td><input  type="hidden" name="bno" value="<%=rs.getInt("bno")%>"></td>
+			</tr>		
+			<tr>
 				<td>제목</td>
 				<td><input type="text" name="title" value="<%=rs.getString("title")%>"></td>
 			</tr>
 			<tr>
 				<td>내용</td>
-				<td><textarea rows="30" cols="50" name="content"><%=rs.getString("content")%></textarea></td>
+				<td><textarea rows="10" cols="30" name="content"><%=rs.getString("content")%></textarea></td>
 			</tr>
 			<tr >
 				<td colspan = "2">
@@ -63,7 +66,7 @@
 		e.printStackTrace();
 	}finally{
 		conn.close();
-		//rs.close();
+		rs.close();
 		pstmt.close();
 	}
 	
