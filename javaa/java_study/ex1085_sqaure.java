@@ -9,8 +9,8 @@ public class ex1085_sqaure {
 		
 		int x = s.nextInt();	//한수의 x축 위치
 		int y = s.nextInt();	//한수의 y축 위치
-		int w = s.nextInt();	//왼쪽 꼭지점
-		int h = s.nextInt();	//오른쪽 꼭지점
+		int w = s.nextInt();	//왼쪽아래 꼭지점
+		int h = s.nextInt();	//오른쪽위 꼭지점
 		
 		int[] arr = new int[4];
 		arr[0] = x;

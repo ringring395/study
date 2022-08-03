@@ -14,7 +14,7 @@ public class ex2839_sugar {
 				sugar += N / 5;
 				System.out.println(sugar);
 				break;
-			} else { 			// 3키로 빼서 한봉지씩 추가함
+			} else { 			// 3키로 빼서 한봉지씩 추가함(5의배수아니면 반복)
 				N -= 3;		 // 다시 if로 올라가서 5의배수인지 확인
 				sugar++;
 			}
