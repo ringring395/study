@@ -18,7 +18,7 @@ public class ex1085_sqaure {
 		arr[2] = y;
 		arr[3] = h-y;	//한수 위치에서 y축까지
 		
-		Arrays.sort(arr);		//내림차순 정렬됨
+		Arrays.sort(arr);		//오름차순 정렬됨
 		//젤 최솟값
 		System.out.println(arr[0]);
 
