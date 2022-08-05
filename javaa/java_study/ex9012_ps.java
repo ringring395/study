@@ -10,6 +10,7 @@ public class ex9012_ps {
 		int N = s.nextInt(); // 총 몇번
 		String[] ps = new String[N]; // 괄호를 입력받는 배열(길이는 N)
 		Stack st = new Stack(); // 스택 사용 선언
+		
 
 		for (int i = 0; i < N; i++) { // 입력한 수만큼 아래 for문 돌림
 			ps[i] = s.next(); // 배열에 괄호를 입력받음
