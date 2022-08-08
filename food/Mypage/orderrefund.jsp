@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ordercancle</title>
+<title>order refund</title>
 <style type="text/css">
 container {
 	display: flex;
@@ -30,7 +30,7 @@ header {
 	<div id="side_left">
 		<table border="1">
 			<tr>
-				<td colspan="2">주문 취소</td>
+				<td colspan="2">주문 반품</td>
 			</tr>
 			<tr>
 				<td rowspan="2">프로필사진</td>
@@ -51,8 +51,8 @@ header {
 
 		</table>
 	</div>
-	<div id="ordercancle">
-		<h3 align="center">취소 사유를 입력해주세요.</h3>
+	<div id="orderrefund">
+		<h3 align="center">반품 사유를 입력해주세요.</h3>
 		<div>
 			<label>주문날짜 8/1</label> <label>주문 번호 123456789</label>
 		</div>
@@ -74,16 +74,27 @@ header {
 		<div align="center">
 			<table border="1" style="width: 500px;">
 				<tr>
-					<td align="center"><input type="radio" name="cancle"
-						value="단순 변심">단순 변심 <input type="radio" name="cancle"
-						value="배송 지연">배송 지연 <br> <input type="radio"
-						name="cancle" value="주문 실수">주문 실수 <input type="radio"
-						name="cancle" value="서비스 불만족">서비스 불만족 <input type="radio"
-						name="cancle" value="기타">기타</td>
+					<th>구매자가 반품배송비 부담</th>
+				</tr>
+				<tr>
+					<td>
+						<input type="radio" name="cancle" value="구매하고 싶지 않음">구매하고 싶지 않음
+						<input type="radio" name="cancle" value="옵션 잘못 선택">옵션 잘못 선택함</td>
+				<tr>
+					<th>판매자가 반품배송비 부담</th>
+				</tr>
+				<tr>
+					<td>
+						<input type="radio"	name="cancle" value="상품파손/하자/불량">배송된 상품 파손/하자/불량 
+						<input type="radio"	name="cancle" value="미도착">상품 미도착 						<input type="radio"	name="cancle" value="불만족">배송 지연 및 상품품질 불만족</td>
 				</tr>
 				<td><textarea rows="10" cols="60" placeholder="상세사유를  입력해주세요."></textarea></td>
 				<tr>
-					<td><input type="submit" value="취소 신청"></td>
+					<td>사진을 첨부해주세요.<br>
+					<input type="file" id="refundfile"><input type="submit"></td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="반품 신청"></td>
 				</tr>
 			</table>
 		</div>
