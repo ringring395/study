@@ -1,7 +1,7 @@
 package java_study;
 
 import java.util.HashMap;
-
+//프로그래머스_해쉬문제
 class Solution {
     public String solution(String[] participant, String[] completion) {
         String answer = "";
