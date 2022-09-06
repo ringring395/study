@@ -5,41 +5,53 @@
 <title>연습문제 15,16</title>
 </head>
 <body>
-<form action="/action_page.php">
-  <label>종족을 고르시오</label>
-    <select>
-      <option>테란</option>
-      <option>저그</option>
-      <option>프로토스</option>
-    </select>
-    <br><br><br>
-   <label>맵을 고르시오</label>
-    <select>
-      <option>hunter</option>
-      <option>map</option>
-      <option>map2</option>
-      <option>map3</option>
-    </select>   
-  </form>
-<br><br><br><br><br>
+	<form action="/action_page.php">
+		<label>카테고리를 고르시오</label> 
+		<select>
+			<option>outer</option>
+			<option>jean</option>
+			<option>pants</option>
+			<option>shirts</option>
+		</select>
+		<label>메뉴를 고르시오</label> 
+		<select>
+			<optgroup label="한식">
+				<option>비빔밥</option>
+				<option>갈비탕</option>
+				<option>해장국</option>
+			</optgroup>
+			<optgroup label="중식">
+				<option>짜장면</option>
+				<option>짬뽕</option>
+				<option>탕수육</option>
+			</optgroup>			
+			<optgroup label="양식">
+				<option>스파게티</option>
+				<option>감바스</option>
+				<option>스테이크</option>
+			</optgroup>
+		</select>
+	</form>
+	<br><br><br><br><br><br>
 
-<label>점심 메뉴를 고르시오</label>
-  <select>
-    <optgroup label="한식">
-     <option>비빔밥</option>
-     <option>갈비탕</option>
-     <option>김치찌개</option>
-     <option>된장찌개</option>
-    </optgroup>
-    <optgroup label="중식">
-     <option>짜장면</option>
-     <option>짬뽕</option>
-     <option>탕슉</option>
-    </optgroup> 
-    <optgroup label="양식">
-     <option>돈가스</option>
-     <option>스파게티</option>
-    </optgroup>
-  </select>   
+
+	<label>점심 메뉴를 고르시오</label>
+	<select>
+		<optgroup label="한식">
+			<option>비빔밥</option>
+			<option>갈비탕</option>
+			<option>김치찌개</option>
+			<option>된장찌개</option>
+		</optgroup>
+		<optgroup label="중식">
+			<option>짜장면</option>
+			<option>짬뽕</option>
+			<option>탕슉</option>
+		</optgroup>
+		<optgroup label="양식">
+			<option>돈가스</option>
+			<option>스파게티</option>
+		</optgroup>
+	</select>
 </body>
 </html>
