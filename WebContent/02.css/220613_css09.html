@@ -24,9 +24,44 @@
 #e {
  border-style:solid
 }
+
+#bstyle1{
+	border-style:dotted;
+	border-color:green;
+	border-width:10px;
+}
+
+#bstyle2{
+	border-style:double;
+	border-radius:20px;
+	background-color:lightyellow;
+}
+
+#bstyle3{
+	border-style:solid double dotted dashed;
+	background-color:lightblue;
+}
+
+#bstyle4{
+	border-style:solid;
+	border-radius:50px 20px 30px;
+	background-color:lightgreen;
+}
+
+#bstyle5{
+	border-style:dashed;
+	border-color:red yellow;
+	border-width:15px;
+}
+
 </style>
 </head>
 <body>
+<h2 id="bstyle1">초록색 굵은 점선</h2>
+<h2 id="bstyle2">모서리 둥근 이중선</h2>
+<h2 id="bstyle3">상우하좌 다른 스타일</h2>
+<h2 id="bstyle4">상, 좌=우, 하 다른 모서리 굵기</h2>
+<h2 id="bstyle5">상=하, 좌=우 색깔 넣은 점선</h2>
 <p id="a">적당한 초록색 실선</p>
 <p id="b">굵은 빨간색 점선</p>
 <p id="c">적당한 빨간색 점선</p>

@@ -5,24 +5,33 @@
 <title>css 연습 14</title>
 <style type="text/css">
 p {
- background-color:yellow;
- border-color:blue;
- border-style: solid;
- border-width: 10px;
- /*=border: blue solid 10px;*/
- width: 300px;
+	background-color: lightblue;
+	border-color: green;
+	border-style: solid;
+	border-width: 10px;
+	/*=border: blue solid 10px;*/
+	width: 300px;
 }
-#a { 
- box-sizng:content-box; 
+
+#cbox {
+	box-sizing: content-box;
 }
-#c {
- box-sizng:border-box;
+
+#dbox {
+	width: 300px;
+	background-color: green;
+}
+
+#bbox {
+	box-sizing: border-box;
 }
 </style>
 </head>
 <body>
-<p id="a">이 텍스트가 차지하는 폭이 300픽셀이다.</p>
+	<p id="cbox">박스의 사이즈는 300이다.</p>
+	<div id="dbox">해당 div사이즈 300</div>
+	<p id="bbox">박스의 사이즈는 300이다.</p>
 
-<p id="c">경계선 박스의 폭이 300픽셀이다.</p>
+
 </body>
 </html>

@@ -5,34 +5,50 @@
 <title>css 연습 15</title>
 <style type="text/css">
 p {
- font-size: 50px;
- font-weight:bold;
- font-family:"궁서";
- margin:20px
+	font-size: 30px;
+	font-weight: bold;
+	margin: 20px
 }
-#a {
- text-shadow:3px 3px 0 gray
- /*          x축  y축  번짐 컬러
+
+div{
+	width:250px;
+	background-color:lightblue;
+	
+}
+
+#ta {
+	text-shadow: 5px 5px 0 gray 
+	/*  x축  y축  번짐 컬러
                  역방향은 (-)넣음.*/
 }
-#b {
- text-shadow:3px 3px 5px gray
+
+#tb {
+	text-shadow: 5px 5px 5px gray
 }
-#c {
- text-shadow:-3px -3px 3px red
+
+#tc {
+	text-shadow: -5px -5px 5px red
 }
-#d {
- color:red;
- text-shadow:1px 0 2px yellow;
- background-color:black;
- width: 300px;
+
+#ba{
+	box-shadow: 5px 5px 0 gray 
+}
+
+#bb{
+	box-shadow: 5px 5px 5px gray
+}
+
+#bc{
+	box-shadow: -5px -5px 5px red
 }
 </style>
 </head>
 <body>
-<p id="a">그림자 문자</p>
-<p id="b">그림자 문자</p>
-<p id="c">그림자 문자</p>
-<p id="d">그림자 문자</p>
+	<p id="ta">그림자 문자</p>
+	<p id="tb">그림자 문자</p>
+	<p id="tc">그림자 문자</p>
+	<div id="ba"><p>그림자 박스</p></div>
+	<div id="bb"><p>그림자 박스</p></div>
+	<div id="bc"><p>그림자 박스</p></div>
 </body>
 </html>

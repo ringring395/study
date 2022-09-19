@@ -4,24 +4,60 @@
 <meta charset="EUC-KR">
 <title>css 연습 13</title>
 <style type="text/css">
-table {
- width: 550px;
- height: 100px
+#div1 {
+	width: 600px;
+	background-color: lightgreen;
 }
-#a { vertical-align:top}
-#b { vertical-align:middle}
-#c { vertical-align:bottom}
-#d { vertical-align:middle; text-align: center}
+
+#dleft {
+	text-align: left
+}
+
+#dcenter {
+	text-align: center
+}
+
+#dright {
+	text-align: right
+}
+
+table {
+	width: 600px;
+	height: 100px;
+	background-color:lightblue;
+}
+
+#ttop {
+	vertical-align: top
+}
+
+#tmiddle {
+	vertical-align: middle
+}
+
+#tbottom {
+	vertical-align: bottom
+}
+
+#tcenter {
+	vertical-align: middle;
+	text-align: center
+}
 </style>
 </head>
 <body>
-<table border="1">
- <tr>
-  <td id="a"> 셀 안의 글자</td>
-  <td id="b"> 셀 안의 글자</td>
-  <td id="c"> 셀 안의 글자</td>
-  <td id="d"> 셀 안의 글자</td>
- </tr>
-</table>
+	<div id="div1">
+		<h3 id="dleft">왼쪽 정렬</h3>
+		<h3 id="dcenter">가운데 정렬</h3>
+		<h3 id="dright">오른쪽 정렬</h3>
+	</div>
+	<table border="1">
+		<tr>
+			<td id="ttop">셀 안의 글자</td>
+			<td id="tmiddle">셀 안의 글자</td>
+			<td id="tbottom">셀 안의 글자</td>
+			<td id="tcenter">셀 안의 글자</td>
+		</tr>
+	</table>
 </body>
 </html>
