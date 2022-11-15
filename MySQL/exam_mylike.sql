@@ -16,28 +16,30 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `dept`
+-- Table structure for table `mylike`
 --
 
-DROP TABLE IF EXISTS `dept`;
+DROP TABLE IF EXISTS `mylike`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `dept` (
-  `DEPTNO` int NOT NULL,
-  `DNAME` varchar(20) DEFAULT NULL,
-  `LOC` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`DEPTNO`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `mylike` (
+  `lno` int NOT NULL AUTO_INCREMENT,
+  `bno` int DEFAULT NULL,
+  `id` varchar(18) DEFAULT NULL,
+  `heart` tinyint(1) DEFAULT NULL,
+  `lcnt` int DEFAULT '0',
+  PRIMARY KEY (`lno`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `dept`
+-- Dumping data for table `mylike`
 --
 
-LOCK TABLES `dept` WRITE;
-/*!40000 ALTER TABLE `dept` DISABLE KEYS */;
-INSERT INTO `dept` VALUES (10,'ACCOUNTING','NEW YORK'),(20,'RESEARCH','DALLAS'),(30,'SALES','CHICAGO'),(40,'OPERATIONS','BOSTON'),(50,'DEVELOPER','KOREA');
-/*!40000 ALTER TABLE `dept` ENABLE KEYS */;
+LOCK TABLES `mylike` WRITE;
+/*!40000 ALTER TABLE `mylike` DISABLE KEYS */;
+INSERT INTO `mylike` VALUES (1,NULL,NULL,1,0),(2,NULL,NULL,1,0),(5,182,'iii777',1,0),(6,181,'iii777',1,0),(7,180,'iii777',1,0),(8,183,'iii777',1,0),(10,182,'eee555',1,0),(11,181,'eee555',1,0),(12,185,'iii777',1,0);
+/*!40000 ALTER TABLE `mylike` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

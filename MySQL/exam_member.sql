@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.21, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
 --
 -- Host: localhost    Database: exam
 -- ------------------------------------------------------
--- Server version	8.0.21
+-- Server version	8.0.30
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -40,7 +40,7 @@ CREATE TABLE `member` (
 
 LOCK TABLES `member` WRITE;
 /*!40000 ALTER TABLE `member` DISABLE KEYS */;
-INSERT INTO `member` VALUES ('aaaa1111','4444','미국',NULL,NULL,'강호동',24),('bbb222','7777','캐나다',NULL,NULL,'이수근',27),('ccc333','5555','거기요',NULL,NULL,'김희철',28),('ddd444','5555','저기',NULL,NULL,'김영철',25),('eee555','3333','여기',NULL,NULL,'서장훈',23),('fff666','7777',NULL,NULL,NULL,'이상민',NULL),('ggg777','9999',NULL,NULL,NULL,'민경훈',NULL),('hhh888','9999',NULL,NULL,NULL,'양세찬',NULL);
+INSERT INTO `member` VALUES ('','',NULL,NULL,NULL,'',NULL),('aa','1111',NULL,NULL,NULL,'임영웅',NULL),('aaa','0000','요기요','01012341234','010@mail.com','임영웅',25),('aaaa1111','4444','미국',NULL,NULL,'강호동',24),('bbb222','7777','캐나다',NULL,NULL,'이수근',27),('ccc333','1111','거기',NULL,NULL,'김희철',28),('ddd444','5555','저기',NULL,NULL,'김영철',25),('eee555','3333','여기',NULL,NULL,'서장훈',23),('fff666','7777',NULL,NULL,NULL,'이상민',NULL),('ggg777','9999',NULL,NULL,NULL,'민경훈',NULL),('hhh888','9999',NULL,NULL,NULL,'양세찬',NULL),('iii777','0000','여기저기',NULL,NULL,'임영웅',NULL);
 /*!40000 ALTER TABLE `member` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-08-12 16:43:36
+-- Dump completed on 2022-11-15 14:14:45

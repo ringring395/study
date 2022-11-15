@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
 --
--- Host: localhost    Database: exam
+-- Host: localhost    Database: dreamland
 -- ------------------------------------------------------
 -- Server version	8.0.30
 
@@ -16,28 +16,31 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `dept`
+-- Table structure for table `user`
 --
 
-DROP TABLE IF EXISTS `dept`;
+DROP TABLE IF EXISTS `user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `dept` (
-  `DEPTNO` int NOT NULL,
-  `DNAME` varchar(20) DEFAULT NULL,
-  `LOC` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`DEPTNO`)
+CREATE TABLE `user` (
+  `id` varchar(30) NOT NULL,
+  `pw` varchar(30) NOT NULL,
+  `name` varchar(15) DEFAULT NULL,
+  `phone` int DEFAULT NULL,
+  `signup` datetime DEFAULT CURRENT_TIMESTAMP,
+  `grp` tinyint(1) DEFAULT '0',
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `dept`
+-- Dumping data for table `user`
 --
 
-LOCK TABLES `dept` WRITE;
-/*!40000 ALTER TABLE `dept` DISABLE KEYS */;
-INSERT INTO `dept` VALUES (10,'ACCOUNTING','NEW YORK'),(20,'RESEARCH','DALLAS'),(30,'SALES','CHICAGO'),(40,'OPERATIONS','BOSTON'),(50,'DEVELOPER','KOREA');
-/*!40000 ALTER TABLE `dept` ENABLE KEYS */;
+LOCK TABLES `user` WRITE;
+/*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` VALUES ('admin@mail.com','admin123','관리자',1012341234,'2022-10-12 11:49:13',1),('user1@mail.com','user1111','임영웅',1012341234,'2022-10-13 14:09:26',0),('user2@mail.com','user2222','정동원',1012344321,'2022-10-27 14:06:52',0),('user3@mail.com','user3333','강호동',1033331234,'2022-10-27 14:47:04',0);
+/*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -49,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-11-15 14:14:44
+-- Dump completed on 2022-11-15 14:14:43
