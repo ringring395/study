@@ -42,4 +42,13 @@ where sal >= 1500
 and deptno = 30
 and job = 'manager';
 
-select * from dept;
+select * from emp order by deptno;
+
+-- EMPLOYEE테이블에서 부서별로 SALARY의 합계가 2500이상인 데이터를 
+-- 합계가 높은 순으로 조회하라.
+
+select sum(sal) as '부서별급여', deptno as '부서번호' 
+from emp 
+group by deptno
+having sum(sal) >=2500
+order by `부서별급여` desc;

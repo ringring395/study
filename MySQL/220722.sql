@@ -73,4 +73,4 @@ select F_SALES(10);
 select F_SALES(20);
 select f_sales(30);
 select F_SALES(10) , F_SALES(20), F_SALES(30);
-
+select * from member;
