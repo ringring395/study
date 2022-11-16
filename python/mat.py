@@ -23,7 +23,7 @@ np.random.seed(20021115)
 x = np.arange(0.0, 100.0, 5.0)  #0~100, 5씩 증가
 y = (x+1.5)+np.random.rand(20) * 50
 #산점도 데이터 출력
-plt.scatter(x, y, c="red", alpha=1, label="scatter point")
+plt.scatter(x, y, c="blue", alpha=1, label="scatter point")
 plt.xlabel("x")   #x축 제목
 plt.ylabel("y")   #y축 제목
 plt.legend(loc="right")    #범례 위치방향
